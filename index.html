@@ -41,7 +41,85 @@
 </header>
 <main>
   <div class="container">
-    content
+    
+  <div class="row">
+    <div class="col participants">
+      <p class="participants__string">
+        Участники в Новосибирске:
+        <a href="#" class="participants__link">105 оптовых компаний</a>
+        <a href="#" class="participants__link">25 производителей</a>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col requests-form">
+      <p class="requests-form__title h2 text-center">
+        ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА
+      </p>
+      <form action="#" class="requests-form__form">
+        <div class="row">
+          <div class="col-sm-3 col-md-2">
+            <p class="h3">Я ищу</p>
+          </div>
+          <div class="col-sm-9 col-md-10">
+            <div class="row">
+              <div class="col-12">
+                <input type="checkbox" id="zhbi" name="zhbi">
+                <label for="zhbi">
+                  ЖБИ
+                  <span class="text-secondary">
+                    ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )
+                  </span>
+                </label>
+              </div>
+              <div class="col-12">
+                <input type="checkbox" id="brick" name="brick">
+                <label for="brick">Кирпич / Газобетон / Брус</label>
+              </div>
+              <div class="col-12">
+                <input type="checkbox" id="beton" name="beton">
+                <label for="beton">Бетон / Раствор</label>
+              </div>
+              <div class="col-12 requests-form__city-selection">
+                <a href="javascript:void(0)" class="requests-form__city-selection-button">
+                  в Новосибирске и области ▼
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-md-2">
+            <label for="requests-form__description">Описание *</label>
+          </div>
+          <div class="col-sm-9 col-md-10">
+            <input class="requests-form__input col-12" id="requests-form__description" name="description">
+            <p class="text-secondary">
+              Пример: нужно фбс 24.4.6 50 шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-md-2">
+            <label for="requests-form__phone">Телефон *</label>
+          </div>
+          <div class="col-sm-3 col-md-4">
+            <input class="requests-form__input col-12" id="requests-form__phone" name="phone">
+          </div>
+          <div class="col-sm-3 col-md-2">
+            <label for="requests-form__name">Имя *</label>
+          </div>
+          <div class="col-sm-3 col-md-4">
+            <input class="requests-form__input col-12" id="requests-form__name" name="name">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <input type="submit" value="ОПУБЛИКОВАТЬ ЗАЯВКУ" class="requests-form__submit btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </div>
+
   </div>
 </main>
 
