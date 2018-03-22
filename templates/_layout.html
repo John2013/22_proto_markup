@@ -10,6 +10,9 @@
     {% block stylesheets -%}
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+            integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous"/>
       <link rel="stylesheet" href="/static/main.css">
     {% endblock %}
 
@@ -19,23 +22,21 @@
 <header>
   {% block header %}
     <div class="container-fluid">
-      <div class="row header">
-
-        <div class="col">
-          <div class="geoip">
+      <div class="col-12">
+        <div class="row justify-content-between">
+          <span class="geoip">
             <span class="geoip__label">Регион:</span>
             <a href="javascript:void(0)" class="geoip__button">
               Новосибирск и область ▼
             </a>
-          </div>
-        </div>
-        <div class="col">
-          <p class="profile-line text-right">
+          </span>
+          <span class="profile-line">
             <a href="#" class="profile-line__name">Леонид Фёдорович</a>
             <a href="#" class="profile-line__exit">выход</a>
-          </p>
+          </span>
         </div>
       </div>
+
     </div>
     {% if show_header_logo %}
       <div class="container">
@@ -90,7 +91,8 @@
         <div class="col-md footer__form">
           <form>
             <div class="form-group row">
-              <label for="footer-form__organization" class="col-sm-3 col-md-4 col-lg-3 col-form-label">Организация</label>
+              <label for="footer-form__organization"
+                     class="col-sm-3 col-md-4 col-lg-3 col-form-label">Организация</label>
               <div class="col-sm-9 col-md-8 col-lg-9">
                 <input class="form-control" id="footer-form__organization">
               </div>

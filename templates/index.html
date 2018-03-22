@@ -5,8 +5,8 @@
     <div class="col participants">
       <p class="participants__string">
         Участники в Новосибирске:
-        <a href="#" class="participants__link">105 оптовых компаний</a>
-        <a href="#" class="participants__link">25 производителей</a>
+        <a href="#" class="participants__link h5">105 оптовых компаний</a>
+        <a href="#" class="participants__link h5">25 производителей</a>
       </p>
     </div>
   </div>
@@ -73,9 +73,48 @@
           </div>
         </div>
         <div class="row justify-content-center">
-            <input type="submit" value="ОПУБЛИКОВАТЬ ЗАЯВКУ" class="requests-form__submit btn btn-primary">
+          <input type="submit" value="ОПУБЛИКОВАТЬ ЗАЯВКУ" class="requests-form__submit btn btn-primary">
         </div>
       </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col requests-list">
+      <div class="requests-list__title">
+        <p class="h2 text-center">Свежие заявки</p>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-between requests-list__filter text-secondary">
+          <div class="">
+            <span>раздел: <a href="javascript:void(0)">Все ▼</a></span>
+          </div>
+          <div class="">
+            <span>регион: <a href="javascript:void(0)">Новосибирск и область ▼</a></span>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      {% for number in range(10) %}
+        <article class="requests-article">
+          <div class="col-12">
+            <header class="row justify-content-between requests-article__header text-secondary">
+              <span class="requests-article__time">вчера, в 21:30</span>
+              <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+            </header>
+          </div>
+
+          <p class="requests-article__text">
+            60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+          </p>
+          <p class="requests-article__author">
+            Алексей
+          </p>
+          <button class="requests-article__number-button btn">Показать телефон</button>
+          <small class="requests-article__views-cnt">12 просмотров</small>
+        </article>
+        <hr>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}
