@@ -16,13 +16,13 @@
         ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА
       </p>
       <form action="#" class="requests-form__form">
-        <div class="row">
+        <div class="row requests-form__row">
           <div class="col-sm-3 col-md-2">
             <p class="h3">Я ищу</p>
           </div>
           <div class="col-sm-9 col-md-10">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 requests-form__option">
                 <input type="checkbox" id="zhbi" name="zhbi">
                 <label for="zhbi">
                   ЖБИ
@@ -30,12 +30,13 @@
                     ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )
                   </span>
                 </label>
+
               </div>
-              <div class="col-12">
+              <div class="col-12 requests-form__option">
                 <input type="checkbox" id="brick" name="brick">
                 <label for="brick">Кирпич / Газобетон / Брус</label>
               </div>
-              <div class="col-12">
+              <div class="col-12 requests-form__option">
                 <input type="checkbox" id="beton" name="beton">
                 <label for="beton">Бетон / Раствор</label>
               </div>
@@ -47,7 +48,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row requests-form__row">
           <div class="col-sm-3 col-md-2">
             <label for="requests-form__description">Описание *</label>
           </div>
@@ -58,7 +59,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row requests-form__row">
           <div class="col-sm-3 col-md-2">
             <label for="requests-form__phone">Телефон *</label>
           </div>
@@ -73,7 +74,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <input type="submit" value="ОПУБЛИКОВАТЬ ЗАЯВКУ" class="requests-form__submit btn btn-primary">
+          <input type="submit" value="ОПУБЛИКОВАТЬ ЗАЯВКУ" class="requests-form__submit btn btn-outline-dark btn-circle">
         </div>
       </form>
     </div>
@@ -110,7 +111,7 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn">Показать телефон</button>
+          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
           <small class="requests-article__views-cnt">12 просмотров</small>
         </article>
         <hr>

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   
-    <title>Главная страница - kupimsami.ru</title>
+    <title>Заявки - kupimsami.ru</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,93 +39,27 @@
 
     </div>
     
+      <div class="container bottom-header">
+        <div class="row">
+          <div class="col-12 logo">
+            <a href="/" class="logo__link">
+              <img class="logo__img" src="static/k-logo.png" alt="logo">
+              <span class="logo__text">kupimsami.ru</span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    
   
 </header>
 <main>
   <div class="container">
     
   <div class="row">
-    <div class="col participants">
-      <p class="participants__string">
-        Участники в Новосибирске:
-        <a href="#" class="participants__link h5">105 оптовых компаний</a>
-        <a href="#" class="participants__link h5">25 производителей</a>
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col requests-form">
-      <p class="requests-form__title h2 text-center">
-        ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА
-      </p>
-      <form action="#" class="requests-form__form">
-        <div class="row requests-form__row">
-          <div class="col-sm-3 col-md-2">
-            <p class="h3">Я ищу</p>
-          </div>
-          <div class="col-sm-9 col-md-10">
-            <div class="row">
-              <div class="col-12 requests-form__option">
-                <input type="checkbox" id="zhbi" name="zhbi">
-                <label for="zhbi">
-                  ЖБИ
-                  <span class="text-secondary">
-                    ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )
-                  </span>
-                </label>
-
-              </div>
-              <div class="col-12 requests-form__option">
-                <input type="checkbox" id="brick" name="brick">
-                <label for="brick">Кирпич / Газобетон / Брус</label>
-              </div>
-              <div class="col-12 requests-form__option">
-                <input type="checkbox" id="beton" name="beton">
-                <label for="beton">Бетон / Раствор</label>
-              </div>
-              <div class="col-12 requests-form__city-selection">
-                <a href="javascript:void(0)" class="requests-form__city-selection-button">
-                  в Новосибирске и области ▼
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row requests-form__row">
-          <div class="col-sm-3 col-md-2">
-            <label for="requests-form__description">Описание *</label>
-          </div>
-          <div class="col-sm-9 col-md-10">
-            <input class="requests-form__input col-12" id="requests-form__description" name="description">
-            <p class="text-secondary">
-              Пример: нужно фбс 24.4.6 50 шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое
-            </p>
-          </div>
-        </div>
-        <div class="row requests-form__row">
-          <div class="col-sm-3 col-md-2">
-            <label for="requests-form__phone">Телефон *</label>
-          </div>
-          <div class="col-sm-3 col-md-4">
-            <input class="requests-form__input col-12" id="requests-form__phone" name="phone">
-          </div>
-          <div class="col-sm-3 col-md-2">
-            <label for="requests-form__name">Имя *</label>
-          </div>
-          <div class="col-sm-3 col-md-4">
-            <input class="requests-form__input col-12" id="requests-form__name" name="name">
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <input type="submit" value="ОПУБЛИКОВАТЬ ЗАЯВКУ" class="requests-form__submit btn btn-outline-dark btn-circle">
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col requests-list">
+    <div class="col-12 requests-list">
       <div class="requests-list__title">
-        <p class="h2 text-center">Свежие заявки</p>
+        <p class="h2 text-center">Заявки</p>
       </div>
       <div class="col-12">
         <div class="row justify-content-between requests-list__filter text-secondary">
@@ -154,7 +88,7 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
+          <button class="requests-article__number-button btn">Показать телефон</button>
           <small class="requests-article__views-cnt">12 просмотров</small>
         </article>
         <hr>
@@ -173,7 +107,7 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
+          <button class="requests-article__number-button btn">Показать телефон</button>
           <small class="requests-article__views-cnt">12 просмотров</small>
         </article>
         <hr>
@@ -192,7 +126,7 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
+          <button class="requests-article__number-button btn">Показать телефон</button>
           <small class="requests-article__views-cnt">12 просмотров</small>
         </article>
         <hr>
@@ -211,7 +145,7 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
+          <button class="requests-article__number-button btn">Показать телефон</button>
           <small class="requests-article__views-cnt">12 просмотров</small>
         </article>
         <hr>
@@ -230,7 +164,102 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
+          <button class="requests-article__number-button btn">Показать телефон</button>
+          <small class="requests-article__views-cnt">12 просмотров</small>
+        </article>
+        <hr>
+      
+        <article class="requests-article">
+          <div class="col-12">
+            <header class="row justify-content-between requests-article__header text-secondary">
+              <span class="requests-article__time">вчера, в 21:30</span>
+              <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+            </header>
+          </div>
+
+          <p class="requests-article__text">
+            60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+          </p>
+          <p class="requests-article__author">
+            Алексей
+          </p>
+          <button class="requests-article__number-button btn">Показать телефон</button>
+          <small class="requests-article__views-cnt">12 просмотров</small>
+        </article>
+        <hr>
+      
+        <article class="requests-article">
+          <div class="col-12">
+            <header class="row justify-content-between requests-article__header text-secondary">
+              <span class="requests-article__time">вчера, в 21:30</span>
+              <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+            </header>
+          </div>
+
+          <p class="requests-article__text">
+            60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+          </p>
+          <p class="requests-article__author">
+            Алексей
+          </p>
+          <button class="requests-article__number-button btn">Показать телефон</button>
+          <small class="requests-article__views-cnt">12 просмотров</small>
+        </article>
+        <hr>
+      
+        <article class="requests-article">
+          <div class="col-12">
+            <header class="row justify-content-between requests-article__header text-secondary">
+              <span class="requests-article__time">вчера, в 21:30</span>
+              <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+            </header>
+          </div>
+
+          <p class="requests-article__text">
+            60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+          </p>
+          <p class="requests-article__author">
+            Алексей
+          </p>
+          <button class="requests-article__number-button btn">Показать телефон</button>
+          <small class="requests-article__views-cnt">12 просмотров</small>
+        </article>
+        <hr>
+      
+        <article class="requests-article">
+          <div class="col-12">
+            <header class="row justify-content-between requests-article__header text-secondary">
+              <span class="requests-article__time">вчера, в 21:30</span>
+              <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+            </header>
+          </div>
+
+          <p class="requests-article__text">
+            60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+          </p>
+          <p class="requests-article__author">
+            Алексей
+          </p>
+          <button class="requests-article__number-button btn">Показать телефон</button>
+          <small class="requests-article__views-cnt">12 просмотров</small>
+        </article>
+        <hr>
+      
+        <article class="requests-article">
+          <div class="col-12">
+            <header class="row justify-content-between requests-article__header text-secondary">
+              <span class="requests-article__time">вчера, в 21:30</span>
+              <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+            </header>
+          </div>
+
+          <p class="requests-article__text">
+            60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+          </p>
+          <p class="requests-article__author">
+            Алексей
+          </p>
+          <button class="requests-article__number-button btn">Показать телефон</button>
           <small class="requests-article__views-cnt">12 просмотров</small>
         </article>
         <hr>

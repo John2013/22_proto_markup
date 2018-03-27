@@ -13,7 +13,7 @@
       <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
             integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous"/>
-      <link rel="stylesheet" href="/static/main.css">
+      <link rel="stylesheet" href="static/main.css">
     {% endblock %}
 
   {% endblock head %}
@@ -21,13 +21,14 @@
 <body>
 <header>
   {% block header %}
-    <div class="container-fluid">
+    <div class="container-fluid top-header">
       <div class="col-12">
         <div class="row justify-content-between">
           <span class="geoip">
             <span class="geoip__label">Регион:</span>
             <a href="javascript:void(0)" class="geoip__button">
-              Новосибирск и область ▼
+              <span class="geoip__checked-item-text">Новосибирск и область</span>
+              <span class="geoip__button-triangle"> ▼</span>
             </a>
           </span>
           <span class="profile-line">
@@ -39,12 +40,12 @@
 
     </div>
     {% if show_header_logo %}
-      <div class="container">
+      <div class="container bottom-header">
         <div class="row">
-          <div class="col-md-2 logo">
-            <a href="/">
-              <img class="logo__img" src="#" alt="logo">
-              <span class="logo__text">Логотип</span>
+          <div class="col-12 logo">
+            <a href="/" class="logo__link">
+              <img class="logo__img" src="static/k-logo.png" alt="logo">
+              <span class="logo__text">kupimsami.ru</span>
             </a>
           </div>
           {% if show_bredcrumbs %}
@@ -136,7 +137,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
           crossorigin="anonymous"></script>
-  <script src="/static/main.js"></script>
+  <script src="static/main.js"></script>
 {% endblock %}
 
 </body>
