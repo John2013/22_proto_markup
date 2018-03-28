@@ -1,57 +1,109 @@
-a, a:hover, a:visited, a:focus{
-    color:inherit;
+body {
+    overflow-x: hidden;
 }
 
-.top-header{
+a, a:hover, a:visited, a:focus {
+    color: inherit;
+}
+
+.top-header {
     background-color: #ddd;
     padding: 5px 30px;
     margin-bottom: 30px;
 }
 
-.top-header a{
+.top-header a {
     color: #085394;
     text-decoration: underline;
 }
 
-a.geoip__button{
+a.geoip__button {
     text-decoration: none;
 }
 
-.geoip__checked-item-text{
+.geoip__checked-item-text {
     text-decoration: underline;
 }
 
-a.participants__link{
+a.participants__link {
     text-decoration: underline;
     margin: 0 10px;
 }
 
-.requests-form__form{
+.requests-form__form {
     background-color: #ddd;
     border: 3px solid #000;
     padding: 20px 10px;
 }
 
-.requests-form__row{
+.requests-form__row {
     margin: 0 0 10px;
 }
 
-.btn-circle{
+.btn-circle {
     border-radius: 50px;
     /*background-color: white;*/
     /*border: 3px solid #000;*/
 }
 
-.requests-form__submit{
+.requests-form__submit {
     background-color: white;
 }
 
-.requests-form{
+.requests-form {
     margin-bottom: 40px;
 }
 
-.requests-article__number-button{
+.requests-article__number-button {
     background-color: #ccc;
     color: black;
     border: none;
+}
+
+.requests-list__more-button {
+    margin: 40px 0;
+}
+
+.reviews-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.reviews {
+    border: 3px solid #999;
+    padding: 10px;
+}
+
+.add-review > p{
+    margin: 0;
+}
+
+@media all and (max-width: 660px) {
+    .reviews {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+}
+
+@media all and (max-width: 767.9px) {
+    .add-review{
+        margin-top: 25px;
+    }
+}
+
+.prev-icon-black {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
+
+.next-icon-black {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+}
+
+.reviews__carousel > .carousel-control-prev {
+    margin-left: -67px;
+}
+
+.reviews__carousel > .carousel-control-next {
+    margin-right: -67px;
 }
