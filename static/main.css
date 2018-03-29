@@ -107,3 +107,8 @@ a.participants__link {
 .reviews__carousel > .carousel-control-next {
     margin-right: -67px;
 }
+
+body > footer{
+    background-color: #ddd;
+    border-top: 3px solid black;
+}
