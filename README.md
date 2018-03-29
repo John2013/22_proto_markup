@@ -16,8 +16,8 @@ Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclop
 
 # How to build
 
-```python3
-$ python build.py #  or python3
+```python
+python build.py #  or python3
 ```
 
 # Project Goals
