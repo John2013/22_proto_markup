@@ -108,12 +108,12 @@
   </div>
   <div class="row reviews-section">
     <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3 reviews">
-      <div class="carousel slide reviews__carousel" data-ride="carousel">
+      <div id="reviewsCarousel" class="carousel slide reviews__carousel" data-ride="carousel">
         <div class="carousel-inner">
 
           {% for number in range(5) %}
 
-          <div id="reviewsCarousel" class="carousel-item{% if number == 0 %} active{% endif %} review">
+          <div class="carousel-item{% if number == 0 %} active{% endif %} review">
             <div class="media">
               <img class="mr-3" src="http://via.placeholder.com/64" alt="Generic placeholder image">
               <div class="media-body">
