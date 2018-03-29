@@ -112,8 +112,11 @@
           <p class="requests-article__author">
             Алексей
           </p>
-          <button class="requests-article__number-button btn btn-secondary btn-circle">Показать телефон</button>
-          <small class="requests-article__views-cnt">12 просмотров</small>
+          <button class="requests-article__number-button btn btn-secondary btn-circle" data-id="{{ number }}">Показать телефон</button>
+          <span id="request-{{ number }}-tel" class="requests-article__tel-number" hidden>
+            <a href="tel:+7999876543{{ number }}">+7(999)876-54-3{{ number }}</a>
+          </span>
+          <small id="request-{{ number }}-views-cnt" class="requests-article__views-cnt" data-count="12">12 просмотров</small>
         </article>
         <hr>
       {% endfor %}
