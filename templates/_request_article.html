@@ -1,0 +1,22 @@
+<article class="requests-article">
+  <div class="col-12">
+    <header class="row justify-content-between requests-article__header text-secondary">
+      <span class="requests-article__time">вчера, в 21:30</span>
+      <span class="requests-article__favorite"><span class="oi oi-star"></span> в закладки</span>
+    </header>
+  </div>
+
+  <p class="requests-article__text">
+    60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.
+  </p>
+  <p class="requests-article__author">
+    Алексей
+  </p>
+  <button class="requests-article__number-button btn btn-secondary btn-circle" data-id="{{ number }}">Показать телефон
+  </button>
+  <span id="request-{{ number }}-tel" class="requests-article__tel-number" hidden>
+            <a href="tel:+7999876543{{ number }}">+7(999)876-54-3{{ number }}</a>
+          </span>
+  <small id="request-{{ number }}-views-cnt" class="requests-article__views-cnt" data-count="12">12 просмотров</small>
+</article>
+<hr>
